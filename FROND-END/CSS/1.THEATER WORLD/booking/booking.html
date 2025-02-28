@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Booking zone</title>
+
+    <link rel="stylesheet" href="/FROND-END/CSS/1.THEATER WORLD/booking/booking.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="navbar">
+
+            <div class="logo"> <img src="/FROND-END/CSS/1.THEATER WORLD/login_page/source/logo.png" alt="" height="60px" width="200px"></div>
+    
+            <ul class="links">
+    
+                <li><a href="hero">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="contact">Contact</a></li>
+    
+            </ul>
+    
+            <a href="#" class="action-btn">Get Started</a>
+    
+            <div class="toggle_btn">
+    
+                <i class="fa-solid fa-bars"></i>
+    
+            </div>
+    
+        </div>
+
+        <div class="dropdown_menu">
+
+            <li><a href="hero">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="contact">Contact</a></li>
+
+            <li><a href="#" class="action-btn" >Get started</a></li>
+
+
+        </div>
+
+        <script>
+
+            const toggleBtn=document.querySelector('.toggle_btn')
+            const toggleBtnIcon=document.querySelector('.toggle_btn i')
+            const dropDownMenu =document.querySelector('.dropdown_menu')
+
+            toggleBtn.onclick =function(){
+
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+
+                toggleBtnIcon.classList = isOpen
+                ?'fa-solid fa-xmark'
+                :'fa-solid fa-bars'
+            }
+            
+
+        </script>
+
+    </header>
+
+    <hr>
+
+
+    <div class="first_zone">
+
+        <section class="row1">
+
+            <h1>INOX : Ashok ,patna</h1>
+
+        </section>
+
+        
+
+        <section class="row2">
+
+            <i class="fa-solid fa-location-dot"></i>
+            <h6>PVR INOX Limited,KP Mall,4th Floor,Budha Marg ,patna,Bihar 800001, India</h6>
+            <a href="https://www.google.co.in/maps/place/25%C2%B036'20.5%22N+85%C2%B008'01.4%22E/@25.60569,85.1311351,17z/data=!3m1!4b1!4m4!3m3!8m2!3d25.60569!4d85.13371?entry=ttu&g_ep=EgoyMDI1MDIwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank"><i class="fa-regular fa-paper-plane" ></i></a>
+
+        </section>
+
+
+
+
+    </div>
+
+
+    
+
+    <section class="row3">
+
+        <div class="left_side">
+
+
+            <div class="col1">
+                <h3>Today</h3>
+            </div>
+
+            <div class="col2">
+                <h3>Tommorrow</h3>
+            </div>
+
+        </div>
+
+        <div class="right_side">
+
+            <div class="col1">
+
+                <select name="city" class="priceSelect"  >
+
+
+                    <option value="">Select Price Range</option>
+
+                    <option value="">Rs 100-200</option>
+
+                    <option value="">Rs 200-300</option>
+
+                    <option value="">Rs 300-400</option>
+                </select>
+
+
+            </div>
+
+            <div class="col2">
+
+                <select class="showtime">
+
+
+                    <option value="">Select Show Timming</option>
+
+                    <option value="">Morning (9:00 AM - 12:00PM)</option>
+
+                    <option value="">After Noon(12:30 PM - 4:00PM)</option>
+
+                    <option value="">Evening(4:30 PM - 7:00 PM)</option>
+                </select>
+
+            </div>
+
+            <div class="col3">
+
+                <div style="color: white; padding-right: 5px;"><i class="fa-solid fa-magnifying-glass"></i></div>
+
+                <div class="search">
+
+                    <p> Search by movie</p>
+
+                </div>
+            
+
+            </div>
+
+
+
+        </div>
+
+        
+        
+
+    </section>
+
+
+    <div class="second_zone">
+
+        <div class="colu">
+
+            <div class="movie_name">
+
+                <P>  Sanam Teri Kasam (U)</P>
+
+            </div>
+
+            <div class="time1" >
+
+                <button >
+
+                    <P>8:00 AM</P>
+
+                </button>
+
+                <button >
+
+                    <P>7:30 PM</P>
+
+                </button>
+
+            </div>
+
+            
+
+
+
+        </div>
+
+        <br>
+
+        <div class="colu">
+
+            <div class="movie_name">
+
+                <P> Badass Ravi kumar (UA 16+) </P>
+
+            </div>
+
+            <div class="time1" >
+
+                <button >
+
+                    <P>11:00 AM</P>
+
+                </button>
+
+                <button >
+
+                    <P>3:30 PM</P>
+
+                </button>
+
+            </div>
+
+            
+
+
+
+        </div>
+
+        <br>
+
+        <div class="colu">
+
+            <div class="movie_name">
+
+                <P>  Chavva</P>
+
+            </div>
+
+            <div class="time1" >
+
+                <button >
+
+                    <P>11:00 AM</P>
+
+                </button>
+
+                <button >
+
+                    <P>9:30 PM</P>
+
+                </button>
+
+            </div>
+
+            
+
+
+
+        </div>
+
+
+
+    </div>
+   
+
+    
+
+
+    
+</body>
+</html>

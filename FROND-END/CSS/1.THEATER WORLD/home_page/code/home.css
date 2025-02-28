@@ -1,0 +1,494 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open Sans', sans-serif;
+
+}
+
+body{
+
+  
+    height: 100vh;
+    background-color: black;
+    background: url("/FROND-END/CSS/1.THEATER WORLD/login_page/source/bg3.jpg")  ;
+    background-size: cover ;
+    background-position: center;
+
+    backdrop-filter: blur(5px);
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+
+}
+
+a:hover{
+
+    color: orange;
+
+}
+
+.header{
+
+    position: relative;
+    padding: 0;
+
+}
+
+
+.navbar{
+
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    backdrop-filter: blur(20px);
+
+}
+
+.navbar .logo a{
+
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+.navbar .logo{
+    
+    padding-bottom: 1px;
+}
+
+.navbar .links{
+
+    display: flex;
+    gap: 2rem;
+
+}
+
+.navbar .toggle_btn{
+
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+
+}
+
+.action-btn{
+
+    background-color: orange;
+    color: white;
+    padding: 0.5rem  1rem;
+    border: none;
+    outline: none;
+
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight:bold;
+    cursor: pointer;
+
+}
+
+.action-btn:hover{
+
+    scale: 1.05;
+    color: white;
+}
+
+.action-btn:active{
+
+    scale: 0.95;
+}
+
+/* DROP DOWN MENU*/
+.dropdown_menu{
+
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    display: none;
+
+}
+
+.dropdown_menu.open{
+
+    height: 240px;
+}
+
+.dropdown_menu li{
+
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* HERO */
+
+.text {
+
+    height: calc(100vh-60px);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+#hero{
+
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/*SLIDE SHOW*/
+
+.slide_show h1{
+
+   color: white;
+   padding-bottom: 30px;
+   padding-top: 10px;
+
+  
+
+
+}
+
+.mar_slide{
+
+    height: 60vh;
+    width: 80vw;
+
+    justify-content: center;
+    align-items: center;
+
+  
+}
+
+/* ROW 1*/
+
+.first_row h2{
+
+    padding-top: 10px;
+
+    color: white;
+}
+
+section.row{
+
+    display: flex;
+
+    color: white;
+    margin-top: 20px;
+
+   
+    justify-content: space-between;
+
+}
+
+section .recommended_movies img{
+
+    height: 385px;
+    width: 250px;
+
+    
+}
+
+
+/*ROW 2*/
+
+.second_row h2{
+
+    padding-top: 10px;
+
+    color: white;
+}
+
+section.row2{
+
+    display: flex;
+
+    color: white;
+    margin-top: 20px;
+
+   
+    justify-content: space-between;
+
+}
+
+.theater1 img{
+
+    height: 280px;
+    width: 420px;
+    
+    padding-left: 25px;
+    padding-right: 25px;
+
+    
+
+}
+
+.row2 h2{
+
+    text-align: center;
+}
+
+.row2 h4{
+
+    text-align: center;
+}
+
+/*ROW 3*/
+
+
+.second_row h2{
+
+    padding-top: 10px;
+
+    color: white;
+}
+
+section.row3{
+
+    display: flex;
+
+    color: white;
+    margin-top: 20px;
+
+   
+    justify-content: space-between;
+
+}
+
+.theater2 img{
+
+    height: 280px;
+    width: 420px;
+    
+    padding-left: 25px;
+    padding-right: 25px;
+
+    
+
+}
+
+.row3 h2{
+
+    text-align: center;
+}
+
+.row3 h4{
+
+    text-align: center;
+}
+
+/* FOOTER */
+
+
+.footer{
+    
+  
+
+}
+
+.footer_1{
+
+    background-color: orange;
+
+    width: 98.5vw;
+
+    color: white;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+
+/* section .recommended_movies img{
+
+    height: 385px;
+    width: 250px;
+} */
+
+
+
+
+/* RESPONSIVE*/
+
+@media (max-width:992px){
+
+    .navbar .links,
+    .navbar .action-btn{
+
+        display: none;
+
+    }
+
+    .navbar .toggle_btn{
+
+        display: block;
+        
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+
+}
+
+@media (max-width:576px){
+
+    .drop_menu{
+
+        left:2rem;
+        width: unset;
+
+    }
+
+}
+
+@media(max-width:432px){
+    
+
+    body{
+
+        
+        width: 100vw;
+        height: 100vh;
+        background: url("/FROND-END/CSS/1.THEATER WORLD/login_page/source/bg3.jpg") ;
+        background-size: cover ;
+        background-position: center;
+    
+        backdrop-filter: blur(50px);
+
+        
+    }
+
+    
+
+    
+
+    .mar_slide{
+
+        height: 20vh;
+        width: 300px;
+    
+        
+    
+    }
+
+
+    /*ROW1*/
+
+
+    section .recommended_movies img{
+
+       
+        height: 320px;
+        width: 380px;
+        padding-left: 10px;
+        
+    }
+
+    section.row{
+
+        display: flex;
+    
+        color: white;
+
+        text-align: center;
+
+        /* height: 300px;
+        width: 200px; */
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+
+        
+    
+    }
+
+    .theater1 img{
+
+        height: 280px;
+        width: 400px;
+        
+        padding-left: 25px;
+        padding-right: 25px;
+    
+        
+    
+    }
+
+    /*ROW 2*/
+
+    .row2{
+
+        display: flex;
+        margin-top: 20px;
+
+        justify-content: space-between;
+        flex-direction: column;
+
+    }
+
+    .row3{
+
+        display: flex;
+        margin-top: 20px;
+
+        justify-content: space-between;
+        flex-direction: column;
+
+    }
+
+
+    .footer_1{
+
+        padding-right: 20px;
+
+        background-color: orange;
+
+        width: 97vw;
+    
+        color: white;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    
+
+    
+
+}

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>home page</title>
+
+    <link rel="stylesheet" href="/FROND-END/CSS/1.THEATER WORLD//home_page/code/home.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="navbar">
+
+            <div class="logo"> <img src="/FROND-END/CSS/1.THEATER WORLD/login_page/source/logo.png" alt="" height="90px" width="200px"></div>
+
+    
+            <ul class="links">
+    
+                <li><a href="hero">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="contact">Contact</a></li>
+    
+            </ul>
+    
+            <a href="#" class="action-btn">Get Started</a>
+    
+            <div class="toggle_btn">
+    
+                <i class="fa-solid fa-bars"></i>
+    
+            </div>
+    
+        </div>
+
+        <div class="dropdown_menu">
+
+            <li><a href="hero">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="contact">Contact</a></li>
+
+            <li><a href="#" class="action-btn" >Get started</a></li>
+
+
+        </div>
+
+        <script>
+
+            const toggleBtn=document.querySelector('.toggle_btn')
+            const toggleBtnIcon=document.querySelector('.toggle_btn i')
+            const dropDownMenu =document.querySelector('.dropdown_menu')
+
+            toggleBtn.onclick =function(){
+
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+
+                toggleBtnIcon.classList = isOpen
+                ?'fa-solid fa-xmark'
+                :'fa-solid fa-bars'
+            }
+            
+
+        </script>
+
+    </header>
+
+    <hr>
+
+   
+
+    <div class="slide_show">
+
+        <h1>Upcoming Movies</h1>
+
+        <marquee class="main_slide" direction="fa-right-to-bracket">
+            
+            <img src="/FROND-END/CSS/1.THEATER WORLD/home_page/source/upcoming/1.png" alt="" class="mar_slide" >
+
+            <img src="/FROND-END/CSS/1.THEATER WORLD/home_page/source/upcoming/2.png" alt="" class="mar_slide" >
+
+            <img src="/FROND-END/CSS/1.THEATER WORLD/home_page/source/upcoming/3.png" alt=""  class="mar_slide">
+
+            <img src="/FROND-END/CSS/1.THEATER WORLD/home_page/source/upcoming/4.png" alt="" class="mar_slide" >
+
+
+            
+        </marquee>
+
+
+
+    </div>
+
+    <hr>
+
+
+
+    <div class="first_row">
+
+        <h2>Recommended Movies</h2>
+        
+
+        <section class="row">
+
+            <div class="recommended_movies" id="1">
+
+
+                <img src="/FROND-END/CSS/1.THEATER WORLD/home_page/source/recommended_movies/img1.jpg" alt="">
+    
+                <h2>Chhava</h2>
+                <h4>Action/Drama/Historical</h4>
+    
+    
+            </div>
+    
+            <div class="recommended_movies" id="2">
+
+                <img src="/FROND-END/CSS/1.THEATER WORLD/home_page/source/recommended_movies/img2.jpg" alt="">
+    
+                <h2>Loveyapa</h2>
+                <h4>Comedy/Drama/Romantic</h4>
+    
+            </div>
+    
+    
+            <div class="recommended_movies" id="3">
+
+                <img src="/FROND-END/CSS/1.THEATER WORLD/home_page/source/recommended_movies/img3.jpg" alt="">
+    
+                <h2>Badass Ravi Kumar</h2>
+                <h4>Action/Drama</h4>
+    
+            </div>
+    
+            <div class="recommended_movies" id="4">
+                
+                <img src="/FROND-END/CSS/1.THEATER WORLD/home_page/source/recommended_movies/img4.jpg" alt="">
+    
+                <h2>Sky Foce</h2>
+                <h4>Action/Drama/Historical</h4>
+    
+            </div>
+    
+            <div class="recommended_movies" id="5">
+                
+                
+                <img src="/FROND-END/CSS/1.THEATER WORLD/home_page/source/recommended_movies/img5.jpg" alt="">
+
+                <h2>Captain America: <br> Brave  New World</h2>
+                <h4>Action/Adventure/Sci-Fi</h4>
+            </div>
+
+        </section>
+
+        
+    </div>
+    <hr>
+
+
+    <div class="second_row">
+
+            <h2>Best Theaters</h2>
+
+        <section class="row2">
+
+            <div class="theater1">
+
+                <img src="/FROND-END/CSS/1.THEATER WORLD/home_page/theaters/ashok inox.jpg" alt="" height="300px" width="400px" >
+
+                <h2> <a href="/FROND-END/CSS/1.THEATER WORLD/booking/booking.html"> Ashok INOX </a></h2>
+            </div>
+    
+            <div class="theater1">
+
+                <img src="/FROND-END/CSS/1.THEATER WORLD/home_page/theaters/cinepolis.jpg" alt="" height="300px" width="400px" >
+
+                <h2><a href="/FROND-END/CSS/1.THEATER WORLD/booking/booking.html"> Cinepolis</a></h2>
+            </div>
+    
+            <div class="theater1">
+               
+                <img src="/FROND-END/CSS/1.THEATER WORLD//home_page/theaters/pkv smart cinema.jpg" alt="" height="300px" width="400px" >
+                
+                <h2>PKV Cinema</h2>
+            </div>
+
+        
+
+        </section>
+        
+    </div>
+
+
+    <div class="third_row">
+
+        <section class="row3">
+
+            <div class="theater2">
+
+                <img src="/FROND-END/CSS/1.THEATER WORLD//home_page/theaters/mona.jpg" alt="" height="300px" width="400px" >
+    
+                <h2>Mona 70mm</h2>
+            </div>
+    
+            <div class="theater2">
+
+                <img src="/FROND-END/CSS/1.THEATER WORLD/home_page/theaters/fun regent.jpg" alt="" height="300px" width="400px" >
+    
+                <h2>Fun Regent</h2>
+            </div>
+    
+            <div class="theater2">
+                
+                <img src="/FROND-END/CSS/1.THEATER WORLD/home_page/theaters/shushil plaza.jpg" alt="" height="300px" width="400px" >
+    
+                <h2>Shushil Plaza</h2>
+            </div>
+    
+        </section>
+    
+    </div>
+
+    <hr>
+
+
+    <center>
+        <diV class="footer" >
+
+            <section class="footer_1">
+    
+                <div id="end_logo">
+
+                    <img src="/FROND-END/CSS/1.THEATER WORLD/login_page/source/logo.png" alt="" height="100px" width="200px">
+
+                   
+                </div>
+    
+                
+    
+                <div id="main_symbols">
+                    
+    
+                    <i class="fa-brands fa-facebook" id="symbols"></i>
+    
+                    <i class="fa-brands fa-square-x-twitter" id="symbols"></i>
+    
+                    <i class="fa-brands fa-square-instagram" id="symbols"></i>
+    
+                    <i class="fa-brands fa-youtube" id="symbols"></i>
+    
+                </div>
+    
+                <div class="end_txt">
+                    <p>Copyright 2025 @ Bigtree Entertainment Pvt. Ltd. All Rights Reserved.
+                    The Content and Images used on this site are copyright protected and copyrights vests with the repective owners. The usage of the content and images on this website is intended to promote the works and ni endorsement of the artist shall be implied. unauthorized use is prohibited and punishable
+                </div>
+    
+    
+            </section>
+    
+        
+               
+            
+            
+        </diV>
+        
+    </center>
+
+
+
+
+
+
+    
+
+
+    
+</body>
+</html>
